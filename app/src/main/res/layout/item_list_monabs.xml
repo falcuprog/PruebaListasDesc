@@ -28,20 +28,38 @@
         android:textSize="14sp"
         android:textStyle="normal"
         android:textColor="@android:color/black"
-        android:layout_marginLeft="130dp"
-        >
-        <!--android:layout_alignRight="@+id/person_name_monabs">-->
+        android:layout_marginLeft="130dp">
     </TextView>
+
+    <me.biubiubiu.justifytext.library.JustifyTextView
+        android:id="@+id/person_address_monabs2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="person_address"
+        android:layout_marginTop="1dp"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="130dp">
+    </me.biubiubiu.justifytext.library.JustifyTextView>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
+        android:id="@+id/separador"
         android:background="#2196F3"
         android:layout_below="@id/person_address_monabs"
         android:layout_marginTop="8dp">
     </View>
 
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/separador2"
+        android:background="#2196F3"
+        android:layout_below="@id/person_address_monabs2"
+        android:layout_marginTop="8dp">
+    </View>
 
 </RelativeLayout>
 

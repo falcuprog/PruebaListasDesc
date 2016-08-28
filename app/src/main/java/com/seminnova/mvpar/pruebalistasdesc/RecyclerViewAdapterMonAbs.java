@@ -1,6 +1,7 @@
 package com.seminnova.mvpar.pruebalistasdesc;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -31,6 +32,15 @@ public class RecyclerViewAdapterMonAbs extends RecyclerView.Adapter<RecyclerView
     public void onBindViewHolder(RecyclerViewHoldersMonAbs holder, int position) {
         holder.personName.setText(itemList.get(position).getName());
         holder.personAddress.setText(itemList.get(position).getAddress());
+        holder.personAddress2.setText(itemList.get(position).getAddress2());
+
+        //holder.itemView.findViewById(R.id.separador).setBackgroundColor(0xffffffff);
+
+        if (itemList.get(position).getAddress2().equals("")) {
+            holder.itemView.findViewById(R.id.separador2).setBackgroundColor(Color.TRANSPARENT);
+        } else {
+            holder.itemView.findViewById(R.id.separador).setBackgroundColor(Color.TRANSPARENT);
+        }
 
     }
 
